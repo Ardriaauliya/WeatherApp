@@ -2,8 +2,50 @@ const cityInput = document.querySelector(".city-input");
 const searchButton = document.querySelector(".search-btn");
 const locationButton = document.querySelector(".location-btn");
 const currentWeatherDiv = document.querySelector(".current-weather");
+const suggestionsList = document.getElementById("suggestions");
+
 
 const API_KEY = "fd3931b3c4db2a2b82ea4eb20843a476"; 
+
+
+const showSuggestions = (suggestions) => {
+    suggestionsList.innerHTML = "";
+
+    suggestions.forEach((suggestion) => {
+        const option = document.createElement("option");
+        option.value = suggestion.name;
+        suggestionsList.appendChild(option);
+    });
+};
+
+const getSuggestions = async (local_names) => {
+    const API_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${local_names}&limit=5&appid=${API_KEY}`;
+
+    try {
+        const response = await fetch(API_URL);
+        const data = await response.json();
+
+        if (!data.length) {
+            suggestionsList.innerHTML = "";
+            return;
+        }
+
+        showSuggestions(data);
+    } catch (error) {
+        console.error("Error fetching suggestions:", error);
+    }
+};
+
+// Event listener for input changes in the city input field
+cityInput.addEventListener("input", () => {
+    const inputText = cityInput.value.trim();
+
+    if (inputText.length >= 2) {
+        getSuggestions(inputText);
+    } else {
+        suggestionsList.innerHTML = ""; // Clear suggestions if input is less than 2 characters
+    }
+});
 
 const createWeatherCard = (cityName, weatherItem, index) => {
     return `<div class="details">
