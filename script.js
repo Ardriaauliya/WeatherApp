@@ -99,8 +99,7 @@ const getUserCoordinates = () => {
         position => {
             const { lat, lon } = position.coords; // Get coordinates of user location
             // Get city name from coordinates using reverse geocoding API
-            const API_URL = 
-            `https://api.openweathermap.org/geo/1.0/reverse?lat=${lati}&lon=${long}&limit=5&appid=${API_KEY}`;
+            const API_URL = `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${long}&limit=5&appid=${API_KEY}`;
             fetch(API_URL).then(response => response.json()).then(data => {
                 const { name } = data[0];
                 getWeatherDetails(name, latitude, longitude);
