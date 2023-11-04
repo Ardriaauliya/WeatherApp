@@ -4,7 +4,7 @@ Disini saya membuat Weather app (Aplikasi peramalan cuaca) dengan fitur :
 3. history pencarian.
 4. Tombol Pencarian (Search Button)
 5. Tombol Gunakan Lokasi Sekarang (Use Current Location)
-6. Tampilan Perakiraan Cuaca (menampilkan detail cuaca saat ini untuk kota yang dicari, nama kota, tanggal, suhu, kecepatan angin, kelembapan, deskripsi ikon cuaca, dan gambar ikon cuaca yang sesuai).
+6. Tampilan Perkiraan Cuaca (menampilkan detail cuaca saat ini untuk kota yang dicari, nama kota, tanggal, suhu, kecepatan angin, kelembapan, deskripsi ikon cuaca, dan gambar ikon cuaca yang sesuai).
 7. Animasi Latar Belakang
 8. Pengambilan Data Cuaca dari OpenWeather API
 9. Styling dengan CSS
@@ -14,3 +14,7 @@ Disini saya membuat Weather app (Aplikasi peramalan cuaca) dengan fitur :
 -Pada minggu ke 1, saya mencari bahan" seperti API, Animasi, dll.
 -Pada minggu ke 2, saya mencari contoh pada youtube dan mulai mengerjakan source code.
 -Pada minggu ke 3, saya menyempurnakan hasil pekerjaan saya.
+
+Untuk penggunannya hanya memasukkan nama kota yang ingin dicari lalu akan muncul nama kota, tanggal, suhu, kecepatan angin, kelembapan, deskripsi ikon cuaca, dan gambar ikon cuaca yang sesuai.
+
+Menggunakan html, css, dan js. Menggunakan API dari https://openweathermap.org/api
