@@ -11,6 +11,6 @@ Disini saya membuat Weather app (Aplikasi peramalan cuaca) dengan fitur :
 10. Responsive
 
 
-Pada minggu ke 1, saya mencari bahan" seperti API, Animasi, dll.
-Pada minggu ke 2, saya mencari contoh pada youtube dan mulai mengerjakan source code.
-Pada minggu ke 3, saya menyempurnakan hasil pekerjaan saya.
+-Pada minggu ke 1, saya mencari bahan" seperti API, Animasi, dll.
+-Pada minggu ke 2, saya mencari contoh pada youtube dan mulai mengerjakan source code.
+-Pada minggu ke 3, saya menyempurnakan hasil pekerjaan saya.
